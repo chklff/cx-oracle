@@ -31,6 +31,8 @@ Copy code
 {
   "sql": "YOUR_SQL_QUERY_HERE"
 }
+```
+
 Warning
 The script contains sensitive information, such as database credentials. Never commit sensitive information like this to a public repository. Use environment variables or a secure vault to handle credentials and sensitive information.
 
