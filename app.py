@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 
 ORACLE_DSN = cx_Oracle.makedsn('165.22.180.189', '1521', 'ORCLCDB')
+### ORACLE_DSN = cx_Oracle.makedsn('165.22.180.189', '1521', service_name='ORCL')
+
 CONNECTION = cx_Oracle.connect('system', 'iDx16reA2R9#i', ORACLE_DSN)
 
 @app.route('/query', methods=['POST'])
